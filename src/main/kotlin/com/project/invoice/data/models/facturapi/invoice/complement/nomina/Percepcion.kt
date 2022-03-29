@@ -1,118 +1,63 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
 /**
- * Objeto con información detallada de cada percepción.
- * <P>
- * Usado por {@link Percepciones}
+ * [<h1>Percepcion</h1>]
  *
- * @version 16/03/2022
- * @author Alejandra JA
- * @category Percepciones
+ * Objeto con información detallada de cada percepción.
+ *
+ * @author Alejandra JA - 16/03/2022
+ * @see Percepciones
  */
 data class Percepcion (
     /**
      * Tipo de Percepción
      *
-     * @apiNote Puede contener:
-     * <P>
-     * `001` Sueldos, Salarios Rayas y Jornales
-    </P> * <P>
-     * `002` Gratificación Anual (Aguinaldo)
-    </P> * <P>
-     * `003` Participación de los Trabajadores en las Utilidades PTU
-    </P> * <P>
-     * `004` Reembolso de Gastos Médicos Dentales y Hospitalarios
-    </P> * <P>
-     * `005` Fondo de Ahorro
-    </P> * <P>
-     * `006` Caja de ahorro
-    </P> * <P>
-     * `009` Contribuciones a Cargo del Trabajador Pagadas por el
-     * Patrón
-    </P> * <P>
-     * `010` Premios por puntualidad
-    </P> * <P>
-     * `011` Prima de Seguro de vida
-    </P> * <P>
-     * `012` Seguro de Gastos Médicos Mayores
-    </P> * <P>
-     * `013` Cuotas Sindicales Pagadas por el Patrón
-    </P> * <P>
-     * `014` Subsidios por incapacidad
-    </P> * <P>
-     * `015` Becas para trabajadores y/o hijos
-    </P> * <P>
-     * `019` Horas extra
-    </P> * <P>
-     * `020` Prima dominical
-    </P> * <P>
-     * `021` Prima vacacional
-    </P> * <P>
-     * `022` Prima por antigüedad
-    </P> * <P>
-     * `023` Pagos por separación
-    </P> * <P>
-     * `024` Seguro de retiro
-    </P> * <P>
-     * `025` Indemnizaciones
-    </P> * <P>
-     * `026` Reembolso por funeral
-    </P> * <P>
-     * `027` Cuotas de seguridad social pagadas por el patrón
-    </P> * <P>
-     * `028` Comisiones
-    </P> * <P>
-     * `029` Vales de despensa
-    </P> * <P>
-     * `030` Vales de restaurante
-    </P> * <P>
-     * `031` Vales de gasolina
-    </P> * <P>
-     * `032` Vales de ropa
-    </P> * <P>
-     * `033` Ayuda para renta
-    </P> * <P>
-     * `034` Ayuda para artículos escolares
-    </P> * <P>
-     * `035` Ayuda para anteojos
-    </P> * <P>
-     * `036` Ayuda para transporte
-    </P> * <P>
-     * `037` Ayuda para gastos de funeral
-    </P> * <P>
-     * `038` Otros ingresos por salarios
-    </P> * <P>
-     * `039` Jubilaciones, pensiones o haberes de retiro
-    </P> * <P>
-     * `044` Jubilaciones, pensiones o haberes de retiro en
-     * parcialidades
-    </P> * <P>
-     * `045` Ingresos en acciones o títulos valor que representan
-     * bienes
-    </P> * <P>
-     * `046` Ingresos asimilados a salarios
-    </P> * <P>
-     * `047` Alimentación diferentes a los establecidos en el Art 94
-     * último
-     * párrafo LISR
-    </P> * <P>
-     * `048` Habitación
-    </P> * <P>
-     * `049` Premios por asistencia
-    </P> * <P>
-     * `050` Viáticos
-    </P> * <P>
-     * `051` Pagos por gratificaciones, primas, compensaciones,
-     * recompensas
-     * u otros en parcialidades
-    </P> * <P>
-     * `052` Pagos por jubilación en parcialidades derivados de una
-     * resolución judicial
-    </P> * <P>
-     * `053` Pagos por jubilación en una sola exhibición derivados de
-     * la
-     * ejecución de una resolución judicial
-    </P> */
+     * Puede contener:
+     * - `001` Sueldos, Salarios Rayas y Jornada
+     * - `002` Gratificación Anual (Aguinaldo(
+     * - `003` Participación de los Trabajadores en las Utilidades PTU.
+     * - `004` Reembolso de Gastos Médicos Dentales y Hospitalarios.
+     * - `005` Fondo de Ahorro
+     * - `006` Caja de ahorro
+     * - `009` Contribuciones a Cargo del Trabajador Pagadas por el Patrón
+     * - `010` Premios por puntualidad
+     * - `011` Prima de Seguro de vida
+     * - `012` Seguro de Gastos Médicos Mayores
+     * - `013` Cuotas Sindicales Pagadas por el Patrón
+     * - `014` Subsidios por incapacidad
+     * - `015` Becas para trabajadores y/o hijos
+     * - `019` Horas extra
+     * - `020` Prima dominical
+     * - `021` Prima vacacional
+     * - `022` Prima por antigüedad
+     * - `023` Pagos por separación
+     * - `024` Seguro de retiro
+     * - `025` Indemnizaciones
+     * - `026` Reembolso por funeral
+     * - `027` Cuotas de seguridad social pagadas por el patrón
+     * - `028` Comisiones
+     * - `029` Vales de despensa
+     * - `030` Vales de restaurante
+     * - `031` Vales de gasolina
+     * - `032` Vales de ropa
+     * - `033` Ayuda para renta
+     * - `034` Ayuda para artículos escolares
+     * - `035` Ayuda para anteojos
+     * - `036` Ayuda para transporte
+     * - `037` Ayuda para gastos de funeral
+     * - `038` Otros ingresos por salarios
+     * - `039` Jubilaciones, pensiones o haberes de retiro
+     * - `044` Jubilaciones, pensiones o haberes de retiro en parcialidades
+     * - `045` Ingresos en acciones o títulos valor que representan bienes
+     * - `046` Ingresos asimilados a salarios
+     * - `047` Alimentación diferentes a los establecidos en el Art 94 último párrafo LISR
+     * - `048` Habitación
+     * - `049` Premios por asistencia
+     * - `050` Viáticos
+     * - `051` Pagos por gratificaciones, primas, compensaciones, recompensas u otros en parcialidades
+     * - `052` Pagos por jubilación en parcialidades derivados de una resolución judicial
+     * - `053` Pagos por jubilación en una sola exhibición derivados de la ejecución de una resolución judicial
+     */
     var tipo_percepcion: String,
 
     /**
@@ -145,8 +90,7 @@ data class Percepcion (
 
     /**
      * Arreglo de objetos para expresar las horas extra aplicables.
-     * @apiNote Requerido cuando
-     * el tipo de percepción es `019` Horas extras.
+     * Requerido cuando [tipo_percepcion] es `019` Horas extras.
      * @see HorasExtra
      */
     var horas_extra: ArrayList<HorasExtra>

@@ -1,14 +1,13 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
 /**
+ * [<h1>Jubilacion</h1>]
+ *
  * Objeto con información detallada de pagos por separación (despido) o
  * indemnización.
- * <P>
- * Usado por {@link Percepciones}
  *
- * @version 17/03/2022
- * @author Alejandra JA
- * @category Percepciones
+ * @author Alejandra JA -17/03/2022
+ * @see Percepciones
  */
 data class Jubilacion (
     /**

@@ -1,16 +1,14 @@
 package com.project.invoice.data.models.facturapi.organizacion
 /**
- * <h1>Extras del pdf</h1>
+ * [<h1>Extras del pdf</h1>]
  *
  * Configura qué campos opcionales se queiren mostrar en el PDF. El SAT no
  * obliga a mostrar estos campos, pero pueden activarse según la preferencia de
  * la organización.
- * Usado por {@link Customization}
  *
- * @version 18/03/2022
- * @author Alejandra JA
- * @category Organizacion
- * @category Customization
+ * @author Alejandra JA -18/03/2022
+ * @see Organizacion
+ * @see Customization
  */
 data class PdfExtra (
     /**

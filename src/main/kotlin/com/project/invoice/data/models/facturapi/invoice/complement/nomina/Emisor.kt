@@ -1,19 +1,18 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
+import com.project.invoice.data.models.facturapi.invoice.complement.Nomina
+
 /**
- * Información del emisor, en caso de ser requerida.
- * <P>
- * Usado en {@link Nomina}
+ * [<h1>Información del emisor, en caso de ser requerida.</h1>]
  *
- * @version 16/03/2022
- * @author Alejandra JA
- * @category Nomina
+ * @author Alejandra JA - 16/03/2022
+ * @see Nomina
  */
 data class Emisor(
     /**
      * CURP del empleador.
      *
-     * @apiNote Requerido cuando el empleador es persona física.
+     * Requerido cuando el empleador es persona física.
      */
     var curp: String,
 
@@ -26,7 +25,7 @@ data class Emisor(
     /**
      * RFC de la persona que fungió como patrón.
      *
-     * @apiNote Se usa cuando el pago se realiza a través de un tercero.
+     * Se usa cuando el pago se realiza a través de un tercero.
      */
     var rfc_patron_origen: String,
 

@@ -1,19 +1,21 @@
 package com.project.invoice.data.models.facturapi.invoice
 
+import com.project.invoice.data.models.facturapi.product.Product
+import com.project.invoice.data.models.facturapi.receipt.Receipt
+
 /**
- * Conceptos incluidos en el documento.
- * <P>
- * Usado por {@link Invoice}, {@link Receipt}.
+ * [<h1>LineItem</h1>]
  *
- * @version 17/03/2022
- * @author Alejandra JA
- * @category Invoice
- * @category Receipt
+ * Conceptos incluidos en el documento.
+ *
+ * @author Alejandra JA - 17/03/2022
+ * @see Invoice
+ * @see Receipt
  */
 data class LineItem(
 
     /**
-     * Cantidad de unidades incluídas del mismo concepto.
+     * Cantidad de unidades incluidas del mismo concepto.
      */
     var quantity: Int,
 

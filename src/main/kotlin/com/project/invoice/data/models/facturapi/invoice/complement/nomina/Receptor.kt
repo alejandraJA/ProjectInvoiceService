@@ -1,13 +1,14 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
+import com.project.invoice.data.models.facturapi.invoice.complement.Nomina
+
 /**
- * Información del trabajador.
- * <P>
- * Usado en {@link Nomina}.
+ * [<h1>Receptor</h1>]
  *
- * @version 17/03/2022
- * @author Alejandra JA
- * @category Nomina
+ * Información del trabajador.
+ *
+ * @author Alejandra JA - 17/03/2022
+ * @see Nomina
  */
 data class Receptor (
     /**
@@ -26,50 +27,35 @@ data class Receptor (
     /**
      * Antigüedad del empleado en el formato especificado por el SAT.
      *
-     * @apiNote Si se envía el valor booleano `false`, este campo no se
+     * - Si se envía el valor booleano `false`, este campo no se
      * incluirá en la factura.
-     * @apiNote Si se envía el valor booleano `true` y
+     *- Si se envía el valor booleano `true` y
      * [.fecha_inicio_rel_laboral] existe, este valor se calculará
      * con la diferencia entre la fecha de inicio de relación laboral y la
      * fecha de pago.
-     * @apiNote Debido a que se desconoce El formato especificado por el SAT, solo
+     * - Debido a que se desconoce El formato especificado por el SAT, solo
      * se mandara el valor `Boolean`, ya que la documentación
-     * menciona:
-     * <P>
-     * Si se envía un string, se espera que éste contenga la antigüedad en
-     * el formato que especifica el SAT.
-    </P> */
+     * menciona: Si se envía un string, se espera que éste contenga la
+     * antigüedad en el formato que especifica el SAT.
+     */
     var antiguedad: Boolean,
 
     /**
      * Tipo de contrato.
      *
-     * @apiNote Los valores que puede contener son:
-     * <P>
-     * `01` Contrato de trabajo por tiempo indeterminado.
-    </P> * <P>
-     * `02` Contrato de trabajo para obra determinada.
-    </P> * <P>
-     * `03` Contrato de trabajo por tiempo determinado.
-    </P> * <P>
-     * `04` Contrato de trabajo por temporada.
-    </P> * <P>
-     * `05` Contrato de trabajo sujeto a prueba.
-    </P> * <P>
-     * `06` Contrato de trabajo con capacitación inicial.
-    </P> * <P>
-     * `07` Modalidad de contratación por pago de hora laborada.
-    </P> * <P>
-     * `08` Modalidad de trabajo por comisión laboral.
-    </P> * <P>
-     * `09` Modalidades de contratación donde no existe relación de
-     * trabajo.
-    </P> * <P>
-     * `10` Jubilación, pensión, retiro..
-    </P> * <P>
-     * `99` Otro contrato.
-    </P> * <P>
-    </P> */
+     * Los valores que puede contener son:
+     * - `01` Contrato de trabajo por tiempo indeterminado.
+     * - `02` Contrato de trabajo para obra determinada.
+     * - `03` Contrato de trabajo por tiempo determinado.
+     * - `04` Contrato de trabajo por temporada.
+     * - `05` Contrato de trabajo sujeto a prueba.
+     * - `06` Contrato de trabajo con capacitación inicial.
+     * - `07` Modalidad de contratación por pago de hora laborada.
+     * - `08` Modalidad de trabajo por comisión laboral.
+     * - `09` Modalidades de contratación donde no existe relación de trabajo.
+     * - `10` Jubilación, pensión, retiro..
+     * - `99` Otro contrato.
+     */
     var tipo_contrato: String,
 
     /**
@@ -80,48 +66,37 @@ data class Receptor (
     /**
      * Tipo de Jornada
      *
-     * @apiNote Los valores que puede contener son:
-     * Clave Descripción
-     * <P>
-     * `01` Diurna
-    </P> * <P>
-     * `02` Nocturna
-    </P> * <P>
-     * `03` Mixta
-    </P> * <P>
-     * `04` Por hora
-    </P> * <P>
-     * `05` Reducida
-    </P> * <P>
-     * `06` Continuada
-    </P> * <P>
-     * `07` Partida
-    </P> * <P>
-     * `08` Por turnos
-    </P> * <P>
-     * `99` Otra Jornada
-    </P> */
+     * Los valores que puede contener son:
+     * - `01` Diurna
+     * - `02` Nocturna
+     * - `03` Mixta
+     * - `04` Por hora
+     * - `05` Reducida
+     * - `06` Continuada
+     * - `07` Partida
+     * - `08` Por turnos
+     * - `99` Otra Jornada
+     */
     var tipo_jornada: String,
 
     /**
      * Tipo de Régimen
      *
-     * @apiNote Los valores pueden ser:
-     * <P>`02` Sueldos (Incluye ingresos señalados en la fracción I del
-     * artículo 94 de LISR)
-    </P> * <P>`03` Jubilados
-    </P> * <P>`04` Pensionados
-    </P> * <P>`05` Asimilados Miembros Sociedades Cooperativas Produccion
-    </P> * <P>`06` Asimilados Integrantes Sociedades Asociaciones Civiles
-    </P> * <P>`07` Asimilados Miembros consejos
-    </P> * <P>`08` Asimilados comisionistas
-    </P> * <P>`09` Asimilados Honorarios
-    </P> * <P>`10` Asimilados acciones
-    </P> * <P>`11` Asimilados otros
-    </P> * <P>`12` Jubilados o Pensionados
-    </P> * <P>`13` Indemnización o Separación
-    </P> * <P>`99` Otro Regimen
-    </P> */
+     * Los valores pueden ser:
+     * - `02` Sueldos (Incluye ingresos señalados en la fracción I del artículo 94 de LISR)
+     * - `03` Jubilados
+     * - `04` Pensionados
+     * - `05` Asimilados Miembros Sociedades Cooperativas Produccion
+     * - `06` Asimilados Integrantes Sociedades Asociaciones Civiles
+     * - `07` Asimilados Miembros consejos
+     * - `08` Asimilados comisionistas
+     * - `09` Asimilados Honorarios
+     * - `10` Asimilados acciones
+     * - `11` Asimilados otros
+     * - `12` Jubilados o Pensionados
+     * - `13` Indemnización o Separación
+     * - `99` Otro Regimen
+     */
     var tipo_regimen: String,
 
     /**
@@ -144,32 +119,32 @@ data class Receptor (
     /**
      * Riesgo de puesto.
      *
-     * @apiNote Los valores que puede tener son:
-     * <P> `1` Clase I
-    </P> * <P> `2` Clase II
-    </P> * <P> `3` Clase III
-    </P> * <P> `4` Clase IV
-    </P> * <P> `5` Clase V
-    </P> * <P> `99` No aplica
-    </P> */
+     * Los valores que puede tener son:
+     * - `1` Clase I
+     * - `2` Clase II
+     * - `3` Clase III
+     * - `4` Clase IV
+     * - `5` Clase V
+     * - `99` No aplica
+     */
     var riesgo_puesto: String,
 
     /**
      * Periodicidad del Pago
      *
-     * @apiNote Los valores que puede contener son:
-     * <P> `01` Diario
-    </P> * <P> `02` Semanal
-    </P> * <P> `03` Catorcenal
-    </P> * <P> `04` Quincenal
-    </P> * <P> `05` Mensual
-    </P> * <P> `06` Bimestral
-    </P> * <P> `07` Unidad obra
-    </P> * <P> `08` Comisión
-    </P> * <P> `09` Precio alzado
-    </P> * <P> `10` Decenal
-    </P> * <P> `99` Otra Periodicidad
-    </P> */
+     * Los valores que puede contener son:
+     * - `01` Diario
+     * - `02` Semanal
+     * - `03` Catorcenal
+     * - `04` Quincenal
+     * - `05` Mensual
+     * - `06` Bimestral
+     * - `07` Unidad obra
+     * - `08` Comisión
+     * - `09` Precio alzado
+     * - `10` Decenal
+     * - `99` Otra Periodicidad
+     */
     var periodicidad_pago: String,
 
 
@@ -177,7 +152,7 @@ data class Receptor (
      * Clave del banco de acuerdo al catálogo del SAT "Bancos" que puedes consultar
      * utilizando nuestra herramienta de búsqueda.
      *
-     * @see https://www.facturapi.io/dashboard/catalogs/bank
+     * @see <a href="https://www.facturapi.io/dashboard/catalogs/bank">Bancos</a>
      */
     var banco: String,
 
@@ -193,7 +168,6 @@ data class Receptor (
      * Importe de la retribución en efectivo por cuota diaria, gratificaciones,
      * percepciones, alimentación, habitación, primas, comisiones, prestaciones en
      * especie, etc.
-     *
      */
     var salario_base_cot_apor: Int,
 
@@ -209,7 +183,7 @@ data class Receptor (
      * Clave de la entidad federativa en donde el trabajador prestó sus servicios al
      * empleador, que puedes consultar utilizando nuestra herramienta de búsqueda.
      *
-     * @see https://www.facturapi.io/dashboard/catalogs/state
+     * @see <a href="https://www.facturapi.io/dashboard/catalogs/state">Estados</a>
      */
     var clave_ent_fed: String,
 

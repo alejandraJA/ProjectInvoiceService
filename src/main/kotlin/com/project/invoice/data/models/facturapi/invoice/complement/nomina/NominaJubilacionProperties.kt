@@ -1,14 +1,12 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
 /**
+ * [<h1>Nomina de Jubilacion - Properties</h1>]
  * Objeto con información detallada de pagos por jubilación, pensiones o haberes
  * de retiro.
- * <P>
- * Usado por {@link Percepciones}
  *
- * @version 13/03/2021
- * @author Alejandra JA
- * @category Percepciones
+ * @author Alejandra JA - 13/03/2021
+ * @see Percepciones
  */
 data class NominaJubilacionProperties (
     /**

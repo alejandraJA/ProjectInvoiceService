@@ -1,14 +1,13 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 /**
+ * [<h1>Accion<h1>]
+ *
  * Objeto para expresar ingresos por acciones o títulos valor que representan
  * bienes. Es requerido cuando existan ingresos por sueldos derivados de
  * adquisición de acciones o títulos.
- * <P>
- * Usado por {@link Percepcion}
- *
- * @version 16/03/2022
- * @author Alejandra JA
- * @category Percepcion
+
+ * @author Alejandra JA - 16/03/2022
+ * @see Percepcion
  */
 data class Accion (
     /**

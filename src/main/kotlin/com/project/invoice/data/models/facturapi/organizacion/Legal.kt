@@ -3,12 +3,11 @@ package com.project.invoice.data.models.facturapi.organizacion
 import com.project.invoice.data.models.facturapi.customer.Address
 
 /**
- * <h1>Datos fiscales de la empresa.</h1>
- * Usado por [Organizacion]
+ * [<h1>Datos fiscales de la empresa.</h1>]
  *
  * @version 17/03/2022
- * @author Alejandra JA
- * @category Organizacion
+ * @author Alejandra JA - 17/03/2022
+ * @see Organizacion
  */
 data class Legal(
     /** Nombre comercial de la organización.  */
@@ -21,62 +20,33 @@ data class Legal(
     var tax_id: String,
 
     /**
-     * <h1>Código de Régimen Fiscal.</h1>
+     * [<h2>Código de Régimen Fiscal.</h2>]
      *
-     * @apiNote Su valor puede ser:
-     * <P>
-    </P> * <P>
-     * `601` General de Ley Personas Morales
-    </P> * <P>
-     * `603` Personas Morales con Fines no Lucrativos
-    </P> * <P>
-     * `605` Sueldos y Salarios e Ingresos Asimilados a Salarios
-    </P> * <P>
-     * `606` Arrendamiento
-    </P> * <P>
-     * `608` Demás ingresos
-    </P> * <P>
-     * `609` Consolidación
-    </P> * <P>
-     * `610` Residentes en el Extranjero sin Establecimiento
-     * Permanente en México
-    </P> * <P>
-     * `611` Ingresos por Dividendos (socios y accionistas)
-    </P> * <P>
-     * `612` Personas Físicas con Actividades Empresariales y
-     * Profesionales
-    </P> * <P>
-     * `614` Ingresos por intereses
-    </P> * <P>
-     * `616` Sin obligaciones fiscales
-    </P> * <P>
-     * `620` Sociedades Cooperativas de Producción que optan por
-     * diferir sus ingresos
-    </P> * <P>
-     * `621` Incorporación Fiscal
-    </P> * <P>
-     * `622` Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras
-    </P> * <P>
-     * `623` Opcional para Grupos de Sociedades
-    </P> * <P>
-     * `624` Coordinados
-    </P> * <P>
-     * `628` Hidrocarburos
-    </P> * <P>
-     * `607` Régimen de Enajenación o Adquisición de Bienes
-    </P> * <P>
-     * `629` De los Regímenes Fiscales Preferentes y de las Empresas
-     * Multinacionales
-    </P> * <P>
-     * `630` Enajenación de acciones en bolsa de valores
-    </P> * <P>
-     * `615` Régimen de los ingresos por obtención de premios
-    </P> * <P>
-     * `625` Régimen de las Actividades Empresariales con ingresos a
-     * través de Plataformas Tecnológicas
-    </P> * <P>
-     * `626` Régimen Simplificado de Confianza
-    </P> */
+     * Su valor puede ser:
+     * - `601` General de Ley Personas Morales
+     * - `603` Personas Morales con Fines no Lucrativos
+     * - `605` Sueldos y Salarios e Ingresos Asimilados a Salarios
+     * - `606` Arrendamiento
+     * - `608` Demás ingresos
+     * - `609` Consolidación
+     * - `610` Residentes en el Extranjero sin Establecimiento Permanente en México
+     * - `611` Ingresos por Dividendos (socios y accionistas)
+     * - `612` Personas Físicas con Actividades Empresariales y Profesionales
+     * - `614` Ingresos por intereses
+     * - `616` Sin obligaciones fiscales
+     * - `620` Sociedades Cooperativas de Producción que optan por diferir sus ingresos
+     * - `621` Incorporación Fiscal
+     * - `622` Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras
+     * - `623` Opcional para Grupos de Sociedades
+     * - `624` Coordinados
+     * - `628` Hidrocarburos
+     * - `607` Régimen de Enajenación o Adquisición de Bienes
+     * - `629` De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales
+     * - `630` Enajenación de acciones en bolsa de valores
+     * - `615` Régimen de los ingresos por obtención de premios
+     * - `625` Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas
+     * - `626` Régimen Simplificado de Confianza
+     */
     var tax_system: String,
 
     /**

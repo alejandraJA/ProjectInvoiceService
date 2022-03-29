@@ -1,13 +1,14 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
+import com.project.invoice.data.models.facturapi.invoice.complement.Nomina
+
 /**
- * Objeto con información de incapacidades.
- * <P>
- * Usado por {@link Nomina}.
+ * [<h1>NominaIncapacidadProperties<h1>]
  *
- * @version 13/03/2022
- * @author Alejandra JA
- * @category Nomina
+ * Objeto con información de incapacidades.
+ *
+ * @version 13/03/2022 - Alejandra JA
+ * @see Nomina
  */
 data class NominaIncapacidadProperties (
     /**
@@ -18,13 +19,12 @@ data class NominaIncapacidadProperties (
     /**
      * Tipo de Incapacidad.
      *
-     * @apiNote Su valor puede ser:
-     * <P>`01` Riesgo de trabajo.
-    </P> * <P>`02` Enfermedad en general.
-    </P> * <P>`03` Maternidad.
-    </P> * <P>`04` Licencia por cuidados médicos de hijos diagnosticados con
-     * cáncer.
-    </P> */
+     * Su valor puede ser:
+     * - `01` Riesgo de trabajo.
+     * - `02` Enfermedad en general.
+     * - `03` Maternidad.
+     * - `04` Licencia por cuidados médicos de hijos diagnosticados con cáncer.
+     */
     var tipo_incapacidad: String,
 
     /**

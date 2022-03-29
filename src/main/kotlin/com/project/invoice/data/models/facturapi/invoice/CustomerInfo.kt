@@ -3,16 +3,16 @@ package com.project.invoice.data.models.facturapi.invoice
 import com.project.invoice.data.models.facturapi.customer.Address
 
 /**
- * <h1>Información del cliente</h1>
+ * [<h1>Información del cliente</h1>]
+ *
  * Objeto con información parcial del cliente receptor del comprobante. Para
  * obtener el objeto `Customer` completo, deberás consultarlo con el método de
  * Obtener Cliente.
- * <P>
- * Usado por [Invoice], [Retention]
  *
  * @version 17/03/2022
- * @author Alejandra JA
- * @category Invoice
+ * @author Alejandra JA - 17/03/2022
+ * @see Invoice
+ * @see Retention
 </P> */
 data class CustomerInfo (
     /**
