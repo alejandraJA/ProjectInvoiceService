@@ -3,17 +3,17 @@ package com.project.invoice.data.models.facturapi.invoice
 import com.project.invoice.data.models.facturapi.invoice.complement.Nomina
 
 /**
- * Clase de Complementos a incluir en la factura.
- * <P>
- * Usado por [Invoice]
+ * [<h1>Complement</h1>]
  *
- * @category Invoice
-</P> */
+ * Clase de Complementos a incluir en la factura.
+ *
+ * @see Invoice
+ */
 data class Complement (
     /**
      * Tipo de complemento.
      *
-     * @apiNote Los tipos de complemento son: `nomina`, `custom` y
+     * Los tipos de complemento son: `nomina`, `custom` y
      * `PagoComplementProperties`
      */
     var type: String,
@@ -21,14 +21,14 @@ data class Complement (
     /**
      * Data del complemento.
      *
-     * @apiNote Dependera del tipo de complemento los datos que contenga.
+     * Dependera del tipo de complemento los datos que contenga.
      * @see Nomina
      */
     var data: Any,
 ) {
     /**
-     * Si [.type] es igual a `nomina` o
-     * `PagoComplementProperties`, entonces el objeto [.data] se
+     * Si [type] es igual a `nomina` o
+     * `PagoComplementProperties`, entonces el objeto [data] se
      * convierte a un ojeto de tipo [Nomina] y lo retorna.
      *
      * @return El Complemento de Nómina ([Nomina]).
@@ -38,7 +38,7 @@ data class Complement (
         get() = data as Nomina?
 
     /**
-     * Si [.type] es igual a `custom` entonces el objeto [.data]
+     * Si [type] es igual a `custom` entonces el objeto [data]
      * retornará un objeto de tipo String que contiene el XML del comlemento.
      *
      * @return Código XML de tu complemento tal cual como quieres que se inserte en

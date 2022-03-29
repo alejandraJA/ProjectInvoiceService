@@ -1,13 +1,15 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
+import com.project.invoice.data.models.facturapi.invoice.complement.Nomina
+
 /**
+ * [<h1>Percepciones</h1>]
+ *
  * Objeto para indicar las percepciones aplicables.
- * <P>
- * Usado en {@link Nomina}
  *
  * @version 17/03/2022
  * @author Alejandra JA
- * @category Nomina
+ * @see Nomina
  */
 data class Percepciones (
     /**

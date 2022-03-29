@@ -3,10 +3,9 @@ package com.project.invoice.data.models.facturapi.invoice
 import com.project.invoice.data.models.facturapi.customer.Address
 
 /**
- * Factura.
+ * [<h1>Factura</h1>]
  *
- * @version 17/03/2022
- * @author Alejandra JA
+ * @author Alejandra JA - 17/03/2022
  */
 data class Invoice (
     /** ID de la factura  */
@@ -18,29 +17,27 @@ data class Invoice (
     /**
      * Modo de trabajo
      *
-     * @implNote Si el valor es `true`, indica que el objeto fue creado en
+     * Si el valor es `true`, indica que el objeto fue creado en
      * ambiente Live; o si es `false`, en ambiente Test.
      */
     var livemode: Boolean,
 
     /**
      * Estado actual de la factura.
-     * <P>
-     * Sus valores son `valid` y `canceled`.
-    </P> */
+     *
+     * Su valor puede ser `valid` o `canceled`.
+     */
     var status: String,
 
     /**
      * Estado de cancelación.
      *
-     * @apiNote Sus valores pueden ser:
-     * `r`, `none`, `pending`,
+     * - Sus valores pueden ser: `r`, `none`, `pending`,
      * `accepted`, `rejected`,`expired`.
-     * @apiNote Estado actual de la solicitud de cancelación, en caso de
-     * haberla
-     * realizado. Puedes leer más a detalle en la sección de Cancelar
-     * Factura).
-     * @see http://docs.facturapi.io/api/.operation/deleteInvoice
+     * - Estado actual de la solicitud de cancelación, en caso
+     * de haberla realizado. Puedes leer más a detalle en la
+     * sección de Cancelar Factura).
+     * @see <a href="http://docs.facturapi.io/api/.operation/deleteInvoice">Cancelación de factura</a>
      */
     var cancellation_status: String,
 
@@ -65,7 +62,7 @@ data class Invoice (
     /**
      * Cancelación de comprovante o recivo.
      *
-     * @apiNote Si el comprobante fue cancelado, este campo contiene el acuse de
+     * Si el comprobante fue cancelado, este campo contiene el acuse de
      * recibo de cancelación en formato XML.
      */
     var cancellation_receipt: String,
@@ -73,18 +70,13 @@ data class Invoice (
     /**
      * Tipo de comprobante.
      *
-     * @apiNote Puede tener los valores
-     * <P>
-     * `I`: Ingreso,
-    </P> * <P>
-     * `P`: Pago,
-    </P> * <P>
-     * `E`: Egreso,
-    </P> * <P>
-     * `N`: Nómina,
-    </P> * <P>
-     * `T`: Traslado.
-    </P> */
+     * Puede tener los valores
+     * - `I`: Ingreso,
+     * - `P`: Pago,
+     * - `E`: Egreso,
+     * - `N`: Nómina,
+     * - `T`: Traslado.
+     */
     var type: String,
 
     /**
@@ -110,7 +102,6 @@ data class Invoice (
     /**
      * Serie. Caracteres designados por la empresa para control interno y sin
      * validez fiscal. En el PDF se imprime junto al Logo.
-     *
      */
     var series: String,
 
@@ -123,31 +114,31 @@ data class Invoice (
     /**
      * Código que representa la forma de pago, deacuerdo al catálogo del SAT.
      *
-     * @apiNote Su valor puede ser:
-     * <P>`01` Efectivo
-    </P> * <P>`02` Cheque nominativo
-    </P> * <P>`03` Transferencia electrónica de fondos
-    </P> * <P>`04` Tarjeta de crédito
-    </P> * <P>`05` Monedero electrónico
-    </P> * <P>`06` Dinero electrónico
-    </P> * <P>`08` Vales de despensa
-    </P> * <P>`12` Dación en pago
-    </P> * <P>`13` Pago por subrogación
-    </P> * <P>`14` Pago por consignación
-    </P> * <P>`15` Condonación
-    </P> * <P>`17` Compensación
-    </P> * <P>`23` Novación
-    </P> * <P>`24` Confusión
-    </P> * <P>`25` Remisión de deuda
-    </P> * <P>`26` Prescripción o caducidad
-    </P> * <P>`27` A satisfacción del acreedor
-    </P> * <P>`28` Tarjeta de débito
-    </P> * <P>`29` Tarjeta de servicios
-    </P> * <P>`30` Aplicación de anticipos
-    </P> * <P>`31` Intermediario pagos
-    </P> * <P>`99` Por definir
-     * @see https://docs.facturapi.io/api/.forma-de-pago
-    </P> */
+     * Su valor puede ser:
+     * - `01` Efectivo
+     * - `02` Cheque nominativo
+     * - `03` Transferencia electrónica de fondos
+     * - `04` Tarjeta de crédito
+     * - `05` Monedero electrónico
+     * - `06` Dinero electrónico
+     * - `08` Vales de despensa
+     * - `12` Dación en pago
+     * - `13` Pago por subrogación
+     * - `14` Pago por consignación
+     * - `15` Condonación
+     * - `17` Compensación
+     * - `23` Novación
+     * - `24` Confusión
+     * - `25` Remisión de deuda
+     * - `26` Prescripción o caducidad
+     * - `27` A satisfacción del acreedor
+     * - `28` Tarjeta de débito
+     * - `29` Tarjeta de servicios
+     * - `30` Aplicación de anticipos
+     * - `31` Intermediario pagos
+     * - `99` Por definir
+     * @see <a href="https://docs.facturapi.io/api/.forma-de-pago">Forma de pago</a>
+     */
     var payment_form: Int,
 
     /**
@@ -174,7 +165,7 @@ data class Invoice (
     /**
      * Tipo de cambio conforme a la moneda usada. Representa el número de pesos
      * mexicanos que equivalen a una unidad de la divisa señalada en el atributo
-     * [.currency]. Su valor debe ser `>= 0`
+     * [currency]. Su valor debe ser `>= 0`
      */
     var exchange: Int,
 

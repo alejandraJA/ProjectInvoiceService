@@ -1,29 +1,29 @@
 package com.project.invoice.data.models.facturapi.invoice.complement
 
 import com.project.invoice.data.models.facturapi.invoice.complement.nomina.*
+import com.project.invoice.data.models.facturapi.invoice.Complement
 
 
 /**
+ * [<h1>Nomina</h1>]
+ *
  * Complemento de Nómina.
  *
- * Usado por [Complement].
- *
- * @version 16/03/2022
- * @author Alejandra JA
- * @category Complement
+ * @author Alejandra JA - 16/03/2022
+ * @see Complement
 </P> */
-class Nomina (
+data class Nomina (
     /**
-     * Tipo de nomina.
+     * Tipo de nómina.
      *
-     * @apiNote Sus valores pueden ser `O` y `E`.
-     * <P>
+     * Sus valores pueden ser `O` y `E`.
+     *
      * `O` (Ordinaria): Cuando corresponde a un pago que se realiza
      * de manera habitual, como sueldos.
-    </P> * <P>
+     *
      * `E` (Extraordinaria): Para pagos fuera de lo habitual, como
      * liquidaciones, aguinaldos o bonos.
-    </P> */
+     */
     var tipo_nomina: String,
 
     /**

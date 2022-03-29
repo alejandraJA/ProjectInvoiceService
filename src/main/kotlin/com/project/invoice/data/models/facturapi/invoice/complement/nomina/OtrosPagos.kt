@@ -1,47 +1,35 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
 /**
- * Arreglo de objetos para expresar otros pagos aplicables.<P>
- * Usado en {@link Nomina}.
+ * [<h1>OtrosPagos</h1>]
  *
- * @version 17/03/2022
- * @author Alejandra JA
- * @category Nomina
+ * Arreglo de objetos para expresar otros pagos aplicables.
+ *
+ * @author Alejandra JA - 17/03/2022
+ * @see Nomina
  */
 data class OtrosPagos (
+
     /**
      * Tipo de Otro Pago
      *
-     * @apiNote Su valor puede ser:
-     * <P>
-     * `001` Reintegro de ISR pagado en exceso.
-    </P> * <P>
-     * `002` Subsidio para el empleo (efectivamente entregado al
-     * trabajador).
-    </P> * <P>
-     * `003` Viáticos (entregados al trabajador).
-    </P> * <P>
-     * `004` Aplicación de saldo a favor por compensación anual.
-    </P> * <P>
-     * `005` Reintegro de ISR retenido en exceso de ejercicio
-     * anterior
-    </P> * <P>
-     * `006` Alimentos en bienes (Servicios de comedor y comida).
-    </P> * <P>
-     * `007` ISR ajustado por subsidio.
-    </P> * <P>
-     * `008` Subsidio efectivamente entregado que no correspondía.
-    </P> * <P>
-     * `009` Reembolso de descuentos efectuados para el crédito de
-     * vivienda.
-    </P> * <P>
-     * `999` Pagos distintos a los listados.
-    </P> */
+     * Su valor puede ser:
+     * - `001` Reintegro de ISR pagado en exceso.
+     * - `002` Subsidio para el empleo (efectivamente entregado al trabajador).
+     * - `003` Viáticos (entregados al trabajador).
+     * - `004` Aplicación de saldo a favor por compensación anual.
+     * - `005` Reintegro de ISR retenido en exceso de ejercicio anterior
+     * - `006` Alimentos en bienes (Servicios de comedor y comida).
+     * - `007` ISR ajustado por subsidio.
+     * - `008` Subsidio efectivamente entregado que no correspondía.
+     * - `009` Reembolso de descuentos efectuados para el crédito de vivienda.
+     * - `999` Pagos distintos a los listados.
+     */
     var tipo_otro_pago: String,
 
     /**
      * Clave de otro pago de nómina propia de la contabilidad de cada patrón.
-     * <P>
+     *
      * Su longitud es de `[3 .. 15]` caracteres.
     </P> */
     var clave: String,
@@ -58,12 +46,11 @@ data class OtrosPagos (
 
     /**
      * Subsudio causado conforme a la tabla del subsidio para el empleo publicada en
-     * el <B>Anexo 8 de la Resolución Miscelánea Fiscal vigente<B>.
+     * el **Anexo 8 de la Resolución Miscelánea Fiscal vigente**.
      *
-     * @apiNote Este valor será insertado dentro del nodo `SubsidioAlEmpleo`,
-     * y es requerido cuando el valor de `tipo_otro_pago ` es
-     * `002`.
-    </B></B> */
+     * - Este valor será insertado dentro del nodo `SubsidioAlEmpleo`,
+     * y es requerido cuando el valor de [tipo_otro_pago] es `002`.
+     */
     var subsidio_causado: Float,
 
     /**

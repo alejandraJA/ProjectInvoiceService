@@ -3,8 +3,7 @@ package com.project.invoice.data.models.facturapi.invoice
 /**
  * Partida
  *
- * @version 17/03/2022
- * @author Alejandra JA
+ * @author Alejandra JA - 17/03/2022
  */
 data class Parts(
     /** Descripción del producto o servicio.  */

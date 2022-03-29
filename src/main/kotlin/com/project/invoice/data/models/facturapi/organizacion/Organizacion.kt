@@ -1,12 +1,10 @@
 package com.project.invoice.data.models.facturapi.organizacion
 
 /**
- * <h1>Objeto Organización</h1>
- * <P>
- * Usado en {@link OrganizationRepository}.
+ * [<h1>Objeto Organización</h1>]
  *
  * @version 17/03/2022
- * @author Alejandra JA
+ * @author Alejandra JA - 17/03/2022
  */
 data class Organizacion (
     /** Ide de la organización.  */
@@ -16,9 +14,9 @@ data class Organizacion (
     var created_at: String,
 
     /**
-     * <H1>Modo de trabajo</H1>
+     * Modo de trabajo
      *
-     * @implNote Si el valor es `true`, indica que el objeto fue creado en
+     * Si el valor es `true`, indica que el objeto fue creado en
      * ambiente Live; o si es `false`, en ambiente Test.
      */
     var is_production_ready: Boolean,
@@ -42,7 +40,8 @@ data class Organizacion (
     var legal: Legal,
 
     /**
-     * <h1>Perzonalización de Facturas</h1>
+     * Perzonalización de Facturas
+     *
      * Actualiza la información relacionada con la identidad o branding de la
      * organización.
      *
@@ -51,13 +50,14 @@ data class Organizacion (
     var customization: Customization,
 
     /**
-     * <h1>Datos de la certificación</h1>
+     * Datos de la certificación
      * @see Certificate
      */
     var certificate: Certificate,
 
     /**
-     * <h1>Perzonalización de los recibos</h1>
+     * Perzonalización de los recibos
+     *
      * Actualiza la información relacionada con la identidad o branding de la
      * organización, con base en los recibos.
      *

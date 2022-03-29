@@ -1,14 +1,12 @@
 package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 
 /**
+ * [<h1>Horas Extra</h1>]
  * Arreglo de objetos para expresar las horas extra aplicables. Requerido cuando
  * el tipo de percepción es "019" (Horas extras).
- * <P>
- * Usado por {@link Percepcion}
  *
- * @author Alejandra JA
- * @version 16/03/2021
- * @category Percepcion
+ * @author Alejandra JA - 16/03/2021
+ * @see Percepcion
  */
 data class HorasExtra (
     /**
@@ -19,14 +17,11 @@ data class HorasExtra (
     /**
      * Clave del catálogo Tipo de Horas.
      *
-     * @apiNote Puede contener:
-     * <P>
-     * `01` Dobles
-    </P> * <P>
-     * `02` Triples
-    </P> * <P>
-     * `03` Simples
-     * @see https://docs.facturapi.io/api/.tipo-de-Horas
+     * Su valor puede ser:
+     * - `01` Dobles
+     * - `02` Triples
+     * - `03` Simples
+     * @see <a href="https://docs.facturapi.io/api/.tipo-de-Horas">Tipo de horas</a>
     </P> */
     var tipo_horas: String,
 

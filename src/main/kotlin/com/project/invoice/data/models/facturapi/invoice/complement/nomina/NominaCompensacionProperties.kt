@@ -3,12 +3,9 @@ package com.project.invoice.data.models.facturapi.invoice.complement.nomina
 /**
  * Objeto con información referente a la compensación de saldos a favor de un
  * trabajador.
- * <P>
- * Usado por {@link OtrosPagos}
  *
- * @version 17/03/2022
- * @author Alejandra JA
- * @category OtrosPagos
+ * @author Alejandra JA -17/03/2022
+ * @see OtrosPagos
  */
 data class NominaCompensacionProperties (
     /**
