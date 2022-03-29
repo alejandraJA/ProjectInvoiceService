@@ -1,5 +1,9 @@
 package com.project.invoice.data.models.facturapi.customer
 
+import com.project.invoice.data.models.facturapi.invoice.CustomerInfo
+import com.project.invoice.data.models.facturapi.invoice.Invoice
+import com.project.invoice.data.models.facturapi.organizacion.Legal
+
 /**
  * [<h1>Clase direccion.<h1>]
  *

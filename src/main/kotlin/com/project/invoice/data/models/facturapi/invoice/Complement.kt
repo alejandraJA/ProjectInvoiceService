@@ -21,7 +21,12 @@ data class Complement (
     /**
      * Data del complemento.
      *
-     * Dependera del tipo de complemento los datos que contenga.
+     * Dependerá del tipo de complemento los datos que contenga.
+     *
+     * Puede contener un objeto de tipo [Nomina] si [type] es
+     * igual a `nomina` o `PagoComplementProperties`. Si [type]
+     * es igual a `custom` entonces contendrá un XML con la
+     * información correspondiente.
      * @see Nomina
      */
     var data: Any,

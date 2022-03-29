@@ -4,14 +4,12 @@ package com.project.invoice.data.models.facturapi.product
  * [<h1>Impuestos</h1><P>]
  * Lista de impuestos que deberán aplicarse a este producto.
  *
- * @apiNote Si el parámetro se omite o es nulo, se guardará con un elemento que
- * representa el `IVA trasladado 16%`, que es el impuesto más
- * común.
- * @apiNote En caso de mandar explícitamente un arreglo vacío, se entiende que
+ * - Si el parámetro se omite o es nulo, se guardará con un elemento que
+ * representa al `IVA trasladado 16%`, que es el impuesto más común.
+ * - En caso de mandar explícitamente un arreglo vacío, se entiende que
  * el producto **está exento de impuestos**.
  *
- * @version 17/03/2022
- * @author Alejandra JA
+ * @author Alejandra JA - 17/03/2022
  * @see Product
 </P> */
 data class Tax (

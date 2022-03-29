@@ -9,6 +9,8 @@ import com.project.invoice.data.models.facturapi.invoice.Complement
  *
  * Complemento de Nómina.
  *
+ * Este campo corresponde a la data que puede tener [Complement.data].
+ *
  * @author Alejandra JA - 16/03/2022
  * @see Complement
 </P> */

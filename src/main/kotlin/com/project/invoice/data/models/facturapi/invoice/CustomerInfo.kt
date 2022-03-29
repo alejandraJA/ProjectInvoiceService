@@ -32,7 +32,7 @@ data class CustomerInfo (
     var tax_id: String,
 
     /**
-     * Objeto Address que contiene la direccion del cliente.
+     * Objeto Address que contiene la dirección del cliente.
      *
      * @see Address
      */

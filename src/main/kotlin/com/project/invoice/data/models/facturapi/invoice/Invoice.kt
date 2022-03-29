@@ -158,7 +158,7 @@ data class Invoice (
     /**
      * Código de la moneda, acorde al estándar ISO 4217.
      *
-     * @see https://es.wikipedia.org/wiki/ISO_4217
+     * @see <a href="https://es.wikipedia.org/wiki/ISO_4217">ISO 4217</a>
      */
     var currency: String,
 

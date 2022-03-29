@@ -5,7 +5,7 @@ package com.project.invoice.data.models.facturapi.customer
  *
  * @author Alejandra JA -16/03/2022
  */
-class Customer (
+data class Customer (
     /** ID del cliente.  */
     var id: String,
 

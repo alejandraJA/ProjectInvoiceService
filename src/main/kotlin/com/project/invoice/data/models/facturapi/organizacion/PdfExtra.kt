@@ -12,8 +12,9 @@ package com.project.invoice.data.models.facturapi.organizacion
  */
 data class PdfExtra (
     /**
-     * Mostrar códigos de catálogos del SAT junto a sus descripciones. Ejemplo: “KGM
-     * Kilogramo.
+     * Mostrar códigos de catálogos del SAT junto a sus descripciones.
+     *
+     * Ejemplo: “KGM" Kilogramo.
      */
     var codes: Boolean,
 
