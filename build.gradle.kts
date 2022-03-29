@@ -22,14 +22,14 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.boot:spring-boot-starter-web:2.6.5")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.2")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	compileOnly("org.projectlombok:lombok")
-	developmentOnly("org.springframework.boot:spring-boot-devtools")
-	annotationProcessor("org.projectlombok:lombok")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	compileOnly("org.projectlombok:lombok:1.18.22")
+	developmentOnly("org.springframework.boot:spring-boot-devtools:2.6.5")
+	annotationProcessor("org.projectlombok:lombok:1.18.22")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.5")
 }
 
 tasks.withType<KotlinCompile> {

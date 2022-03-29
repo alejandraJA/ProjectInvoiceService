@@ -1,14 +1,12 @@
 package com.project.invoice.data.models.facturapi.product
 
 /**
- * <h1>Impuestos locales</h1>
+ * [<h1>Impuestos locales</h1><P>]
  * Arreglo de impuestos locales (estatales o municipales), en caso de haberlos.
- * <P>
- * Usado por {@link Product}
  *
  * @version 17/03/2022
  * @author Alejandra JA
- * @category Product
+ * @see [Product]
  */
 data class LocalTax (
     /** Tasa del impuesto  */
